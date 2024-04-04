@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+    <link type: "text/css" rel="stylesheet" href="./apply.css">
+</head>
+<body>
+    <h1>hi, <%-id%></h1>
+    <h1> Please fill in the following form: </h1> 
+    <form action="/submit" method="post" autocomplete="on">
+    <h2> My idea is:  <input name="idea" maxlength="2000"></input></h2><div></div>
+    <label for="phone">Enter your phone number: + </label>
+    <input name="country" id="country" pattern="[0-9]{3}"></input><input type="tel" name="phone" id="phone" pattern="[0-9]{8}" minlength="8"></input><div></div>
+    <button type="submit">Submit your phone number</button>
+    <input type="hidden" value=`${<%-ip%>}` name="ip">
+    </form>
+</body>
+</html>

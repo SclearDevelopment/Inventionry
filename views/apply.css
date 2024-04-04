@@ -1,0 +1,5 @@
+body{
+    background-image: linear-gradient(to bottom, rgb(233, 191, 144) 0%, rgb(205, 160, 115) 2%, #cea174 3%, #deb887 10%, rgb(205, 160, 115) 100%);
+    background-attachment: fixed;
+    text-align: center
+}
