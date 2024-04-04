@@ -5,8 +5,8 @@ const post=require('./schema/Post.js')
 const port=3000
 const node_rsa=require('rsa-encrypt').default;
 const rsa= new node_rsa()
-const username = `admin_0`
-const password = `reoihrgleghipoergh`
+const username = `secret!`
+const password = `secret!`
 const uri = `mongodb+srv://${username}:${password}@atlascluster.qrt2z5s.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster`;
 // register view engine
 app.set('view engine', 'ejs')
